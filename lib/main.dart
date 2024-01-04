@@ -59,7 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               width: 327 * widthRatio,
               height: 87,
-              color: Colors.amber,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -185,7 +184,6 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               height: 200,
               width: 310 * widthRatio,
-              color: Colors.amber,
               child: BarChart(
                 BarChartData(
                   minY: 0,
@@ -469,7 +467,337 @@ class _MyHomePageState extends State<MyHomePage> {
                                   )
                                 ],
                               ),
-                            )
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 110,
+                                left: 60,
+                                right: 60,
+                              ),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    width: 255 * widthRatio,
+                                    height: 147 * widthRatio,
+                                    decoration: ShapeDecoration(
+                                      color: Color(0xFFE7BE1A),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(32),
+                                      ),
+                                      shadows: [
+                                        BoxShadow(
+                                          color: Color(0x19000000),
+                                          blurRadius: 8,
+                                          offset: Offset(0, 4),
+                                          spreadRadius: 4,
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      top: 20,
+                                    ),
+                                    child: Container(
+                                      width: 255 * widthRatio,
+                                      height: 147 * widthRatio,
+                                      decoration: ShapeDecoration(
+                                        color: Color(0xFF389BBA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(32),
+                                        ),
+                                        shadows: [
+                                          BoxShadow(
+                                            color: Color(0x19000000),
+                                            blurRadius: 8,
+                                            offset: Offset(0, 4),
+                                            spreadRadius: 4,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(top: 40),
+                                    child: Container(
+                                      width: 255 * widthRatio,
+                                      height: 147 * widthRatio,
+                                      decoration: ShapeDecoration(
+                                        color: Color(0xFFEAF3FA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(32),
+                                        ),
+                                        shadows: [
+                                          BoxShadow(
+                                            color: Color(0x19000000),
+                                            blurRadius: 8,
+                                            offset: Offset(0, 4),
+                                            spreadRadius: 4,
+                                          )
+                                        ],
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              top: 22,
+                                              left: 19,
+                                            ),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'ABC Debit Card',
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 14 * widthRatio,
+                                                    fontFamily:
+                                                        GoogleFonts.poppins()
+                                                            .fontFamily,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                                Text.rich(
+                                                  TextSpan(
+                                                    children: [
+                                                      TextSpan(
+                                                        text: 'Card Number ',
+                                                        style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize:
+                                                              10 * widthRatio,
+                                                          fontFamily:
+                                                              GoogleFonts
+                                                                      .poppins()
+                                                                  .fontFamily,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
+                                                      ),
+                                                      TextSpan(
+                                                        text: '12345678',
+                                                        style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize:
+                                                              10 * widthRatio,
+                                                          fontFamily:
+                                                              GoogleFonts
+                                                                      .poppins()
+                                                                  .fontFamily,
+                                                          fontWeight:
+                                                              FontWeight.w700,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                SizedBox(height: 19),
+                                                Row(
+                                                  children: [
+                                                    Container(
+                                                      width: 24 * widthRatio,
+                                                      height: 24 * widthRatio,
+                                                      child: Image.asset(
+                                                        'assets/images/moneys.png',
+                                                        fit: BoxFit.cover,
+                                                      ),
+                                                    ),
+                                                    SizedBox(width: 10),
+                                                    Text(
+                                                      'Rp 16.350.000',
+                                                      style: TextStyle(
+                                                        color:
+                                                            Color(0xFF4E3BBB),
+                                                        fontSize:
+                                                            14 * widthRatio,
+                                                        fontFamily: GoogleFonts
+                                                                .poppins()
+                                                            .fontFamily,
+                                                        fontWeight:
+                                                            FontWeight.w700,
+                                                      ),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.only(
+                                              top: 22,
+                                              left: 220,
+                                            ),
+                                            child: Column(
+                                              children: [
+                                                Container(
+                                                  width: 30 * widthRatio,
+                                                  height: 30 * widthRatio,
+                                                  decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            30),
+                                                    color: Color(0xFF389BBA),
+                                                  ),
+                                                  child: Icon(
+                                                      Icons.receipt_long_sharp,
+                                                      color: Colors.white),
+                                                ),
+                                                SizedBox(
+                                                  height: 15,
+                                                ),
+                                                Container(
+                                                  width: 30 * widthRatio,
+                                                  height: 30 * widthRatio,
+                                                  decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            30),
+                                                    color: Color(0xFF389BBA),
+                                                  ),
+                                                  child: Icon(
+                                                    Icons.card_membership_sharp,
+                                                    color: Colors.white,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        EdgeInsets.only(top: 183, left: 120),
+                                    child: Container(
+                                      width: 30 * widthRatio,
+                                      height: 30 * widthRatio,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(30),
+                                        color: Color(0xFF389BBA),
+                                      ),
+                                      child: Icon(
+                                        Icons.arrow_circle_up_rounded,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            buildIncome(
+                              widthRatio: widthRatio,
+                              iconBackground: Color(0xFFE9C227),
+                              icon: Icon(
+                                Icons.monetization_on_rounded,
+                                color: Colors.white,
+                              ),
+                              title: 'Income',
+                              topInt: 360,
+                              amount: '2.500.000',
+                            ),
+                            buildIncome(
+                              widthRatio: widthRatio,
+                              iconBackground: Color(0xFF15AE9C),
+                              icon: Icon(
+                                Icons.add_card_sharp,
+                                color: Colors.white,
+                              ),
+                              title: 'Savings',
+                              topInt: 460,
+                              amount: '800.000',
+                            ),
+                            buildIncome(
+                              widthRatio: widthRatio,
+                              iconBackground: Color(0xFFE9C227),
+                              icon: Icon(
+                                Icons.monetization_on_outlined,
+                                color: Colors.white,
+                              ),
+                              title: 'Investment',
+                              topInt: 560,
+                              amount: '3.000.000',
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                top: 700,
+                                left: 24,
+                              ),
+                              child: Row(
+                                children: [
+                                  Icon(
+                                    Icons.keyboard_arrow_left,
+                                    color: Colors.white,
+                                    size: 20 * widthRatio,
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  Text(
+                                    'April',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12 * widthRatio,
+                                      fontFamily:
+                                          GoogleFonts.poppins().fontFamily,
+                                      fontWeight: FontWeight.w500,
+                                      height: 0,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  Container(
+                                    width: 83,
+                                    height: 29,
+                                    decoration: ShapeDecoration(
+                                      color: Color(0xFF41319C),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        'May',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12 * widthRatio,
+                                          fontFamily:
+                                              GoogleFonts.poppins().fontFamily,
+                                          fontWeight: FontWeight.w700,
+                                          height: 0,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  Text(
+                                    'June',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12 * widthRatio,
+                                      fontFamily:
+                                          GoogleFonts.poppins().fontFamily,
+                                      fontWeight: FontWeight.w500,
+                                      height: 0,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 40,
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                    color: Colors.white,
+                                    size: 20 * widthRatio,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       );
@@ -480,6 +808,103 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class buildIncome extends StatelessWidget {
+  const buildIncome({
+    super.key,
+    required this.widthRatio,
+    required this.iconBackground,
+    required this.icon,
+    this.title = "title",
+    required this.topInt,
+    required this.amount,
+  });
+
+  final double widthRatio;
+  final Color iconBackground;
+  final Icon icon;
+  final String title;
+  final double topInt;
+  final String amount;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(top: topInt, left: 24),
+      child: Container(
+        width: 327 * widthRatio,
+        height: 73 * widthRatio,
+        decoration: ShapeDecoration(
+          color: Color(0xFF41319C),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+        ),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 22, right: 22),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 32 * widthRatio,
+                        height: 32 * widthRatio,
+                        decoration: ShapeDecoration(
+                          color: iconBackground,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
+                        child: icon,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12 * widthRatio,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            'Total $title in May',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10 * widthRatio,
+                              fontFamily: GoogleFonts.poppins().fontFamily,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Text(
+                    'Rp $amount',
+                    style: TextStyle(
+                      color: iconBackground,
+                      fontSize: 12 * widthRatio,
+                      fontFamily: GoogleFonts.poppins().fontFamily,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
